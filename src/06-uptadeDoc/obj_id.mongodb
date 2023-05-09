@@ -1,0 +1,13 @@
+use("store");
+
+db.products.updateOne(
+  {
+    _id: ObjectId("6459795560157b4bdc469218"),
+  },
+  {
+    $inc: {
+      price: 111,
+    },
+  }
+);
+db.products.find();
